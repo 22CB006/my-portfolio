@@ -1,0 +1,119 @@
+.experience-item {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 1.5rem;
+  bottom: 0;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.experience-item:last-child::before {
+  display: none;
+}
+
+.experience-item__timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #3b82f6;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.experience-item__content {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.experience-item__content:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color: #3b82f6;
+}
+
+.experience-item__header {
+  margin-bottom: 1rem;
+}
+
+.experience-item__role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+}
+
+.experience-item__company {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3b82f6;
+  margin: 0 0 0.25rem 0;
+}
+
+.experience-item__duration {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.experience-item__description {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.experience-item__responsibilities {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.experience-item__responsibilities li {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item__responsibilities li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-item__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .experience-item {
+    padding-left: 3rem;
+  }
+
+  .experience-item__content {
+    padding: 2rem;
+  }
+
+  .experience-item__role {
+    font-size: 1.5rem;
+  }
+}

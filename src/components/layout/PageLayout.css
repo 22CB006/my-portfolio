@@ -1,0 +1,28 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-layout-content {
+  flex: 1;
+  width: 100%;
+}
+
+.page-layout-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .page-layout-main {
+    padding: 1.5rem 1rem;
+  }
+}

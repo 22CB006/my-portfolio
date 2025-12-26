@@ -1,0 +1,95 @@
+.contact-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.contact-cta .section__title,
+.contact-cta .section__subtitle {
+  color: white;
+}
+
+.contact-cta__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-cta__text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.contact-cta__info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-cta__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-cta__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.contact-cta__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.contact-cta__link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.contact-cta__value {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.contact-cta__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Override button styles for this section */
+.contact-cta .button--outline {
+  border-color: white;
+  color: white;
+}
+
+.contact-cta .button--outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contact-cta__text {
+    font-size: 1rem;
+  }
+
+  .contact-cta__info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-cta__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

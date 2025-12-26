@@ -1,0 +1,8 @@
+.home {
+  width: 100%;
+}
+
+/* Ensure sections have proper spacing */
+.home > section {
+  width: 100%;
+}

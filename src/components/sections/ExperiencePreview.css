@@ -1,0 +1,30 @@
+.experience-preview {
+  background-color: #ffffff;
+}
+
+.experience-preview__timeline {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.experience-preview__timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #667eea, #764ba2);
+}
+
+.experience-preview__cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .experience-preview__timeline::before {
+    left: 0;
+  }
+}

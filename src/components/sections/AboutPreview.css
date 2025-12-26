@@ -1,0 +1,26 @@
+.about-preview {
+  background-color: #f9fafb;
+}
+
+.about-preview__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-preview__intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.about-preview__cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-preview__intro {
+    font-size: 1rem;
+  }
+}

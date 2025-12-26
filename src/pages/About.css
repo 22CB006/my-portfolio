@@ -1,0 +1,189 @@
+/* About Page Styles */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Professional Profile Section */
+.about-profile {
+  background-color: #ffffff;
+}
+
+.about-profile__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-profile__text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.about-profile__text:last-child {
+  margin-bottom: 0;
+}
+
+/* Strengths Section */
+.about-strengths {
+  background-color: #f7fafc;
+}
+
+.about-strengths__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about-strengths__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-strengths__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.strength-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.strength-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.strength-card__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.strength-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.strength-card__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+/* Why Work With Me Section */
+.about-value {
+  background-color: #ffffff;
+}
+
+.about-value__content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.value-point {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.value-point:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.value-point__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.value-point__description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+/* Complete Skills Section */
+.about-skills {
+  background-color: #f7fafc;
+}
+
+.about-skills__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-skills__group {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-skills__category {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #4299e1;
+}
+
+.about-skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .about-profile__text {
+    font-size: 1rem;
+  }
+
+  .strength-card {
+    padding: 1.5rem;
+  }
+
+  .strength-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .strength-card__title {
+    font-size: 1.125rem;
+  }
+
+  .value-point__title {
+    font-size: 1.25rem;
+  }
+
+  .value-point__description {
+    font-size: 1rem;
+  }
+
+  .about-skills__group {
+    padding: 1.5rem;
+  }
+
+  .about-skills__category {
+    font-size: 1.25rem;
+  }
+}
