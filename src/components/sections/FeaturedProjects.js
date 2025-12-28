@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { projects } from '../../data/projects';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Button from '../common/Button';
+import { MovingBorderButton } from '../ui/moving-border';
 import { PixelCanvas } from '../ui/pixel-canvas';
 import './FeaturedProjects.css';
 
@@ -283,27 +284,17 @@ const FeaturedProjects = () => {
         </div>
 
         {/* View All Button */}
-        <div className="cta-section">
-          <Button
-            variant="gradient"
+        <div className="cta-section flex justify-center">
+          <MovingBorderButton
             onClick={() => navigate('/projects')}
+            borderRadius="1.75rem"
+            className="bg-slate-900/90 text-white border-cyan-500/30 font-semibold flex items-center gap-2"
+            containerClassName="h-14 w-56"
+            duration={3000}
           >
             View All Projects
-            <svg 
-              className="arrow-icon" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-              style={{ marginLeft: '0.5rem' }}
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M17 8l4 4m0 0l-4 4m4-4H3" 
-              />
-            </svg>
-          </Button>
+            <ArrowRight size={16} />
+          </MovingBorderButton>
         </div>
       </div>
     </section>

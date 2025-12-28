@@ -105,5 +105,36 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
+}
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
+
+function flattenColorPalette(colors) {
+  const result = {};
+  
+  function flatten(obj, prefix = '') {
+    for (const [key, value] of Object.entries(obj)) {
+      const newKey = prefix ? `${prefix}-${key}` : key;
+      
+      if (typeof value === 'string') {
+        result[newKey] = value;
+      } else if (typeof value === 'object' && value !== null) {
+        flatten(value, newKey);
+      }
+    }
+  }
+  
+  flatten(colors);
+  return result;
 }

@@ -3,6 +3,7 @@ import { Mail, MessageCircle, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { siteConfig } from '../../data/config';
 import Button from '../common/Button';
+import { MovingBorderButton } from '../ui/moving-border';
 import './ContactCTA.css';
 
 const ContactCTA = () => {
@@ -91,16 +92,18 @@ const ContactCTA = () => {
       </div>
 
       {/* Contact Form Button */}
-      <div className="contact-form-cta">
+      <div className="contact-form-cta flex flex-col items-center gap-4">
         <p className="form-cta-text">Prefer a detailed message?</p>
-        <Button
-          variant="gradient"
-          size="small"
+        <MovingBorderButton
           onClick={() => navigate('/contact')}
+          borderRadius="1.75rem"
+          className="bg-slate-900/90 text-white border-cyan-500/30 font-semibold flex items-center gap-2"
+          containerClassName="h-14 w-56"
+          duration={3000}
         >
-          <Send className="btn-icon" size={14} />
-          <span style={{ marginLeft: '0.25rem' }}>Fill Contact Form</span>
-        </Button>
+          <Send size={16} />
+          Fill Contact Form
+        </MovingBorderButton>
       </div>
     </div>
   );

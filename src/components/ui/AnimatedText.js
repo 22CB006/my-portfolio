@@ -87,19 +87,6 @@ const AnimatedText = React.forwardRef(
               </motion.span>
             ))}
           </motion.div>
-          <motion.div
-            variants={lineVariants}
-            initial="hidden"
-            animate="visible"
-            className={cn(
-              "absolute",
-              underlineHeight,
-              underlineOffset,
-              "bg-gradient-to-r",
-              underlineGradient,
-              underlineClassName
-            )}
-          />
         </div>
       </div>
     );

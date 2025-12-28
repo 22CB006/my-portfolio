@@ -155,10 +155,6 @@ const About = () => {
             duration={0.05}
             delay={0.08}
             textClassName="section__title animated-title"
-            underlineGradient="from-cyan-500 via-purple-500 to-cyan-500"
-            underlineHeight="h-1"
-            underlineOffset="-bottom-3"
-            underlineClassName="rounded-full"
           />
           <p className="section__subtitle">Full Stack Developer & AI Engineer</p>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../common/Button';
+import { MovingBorderButton } from '../ui/moving-border';
+import { ArrowRight } from 'lucide-react';
 import './AboutPreview.css';
 
 const AboutPreview = () => {
@@ -28,27 +30,18 @@ const AboutPreview = () => {
           problems.
         </p>
         
-        <Button 
-          variant="primary" 
-          size="medium" 
-          onClick={handleKnowMore}
-        >
-          Know More About Me
-          <svg 
-            className="about-preview-button-icon" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-            style={{ marginLeft: '0.5rem', width: '16px', height: '16px' }}
+        <div className="flex justify-center mt-8">
+          <MovingBorderButton
+            onClick={handleKnowMore}
+            borderRadius="1.75rem"
+            className="bg-slate-900/90 text-white border-cyan-500/30 font-semibold flex items-center gap-2"
+            containerClassName="h-14 w-56"
+            duration={3000}
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M17 8l4 4m0 0l-4 4m4-4H3" 
-            />
-          </svg>
-        </Button>
+            Know More About Me
+            <ArrowRight size={16} />
+          </MovingBorderButton>
+        </div>
       </div>
     </div>
   );
