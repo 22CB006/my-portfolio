@@ -286,7 +286,6 @@ const FeaturedProjects = () => {
         <div className="cta-section">
           <Button
             variant="gradient"
-            size="large"
             onClick={() => navigate('/projects')}
           >
             View All Projects

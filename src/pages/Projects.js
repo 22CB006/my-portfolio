@@ -29,6 +29,7 @@ const Projects = () => {
     src: project.images[0] || "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=80",
     github: project.github,
     liveDemo: project.liveDemo,
+    caseStudy: project.caseStudy,
     projectId: project.id
   }));
 

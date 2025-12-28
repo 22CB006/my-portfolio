@@ -86,8 +86,8 @@ const Footer = () => {
                   className="footer-link footer-contact-link"
                   href={href}
                 >
-                  {title === 'Email' && <Mail className="contact-icon" />}
-                  {title === 'Phone' && <Phone className="contact-icon" />}
+                  {title === 'Email' && <Mail className="footer-contact-icon" size={16} />}
+                  {title === 'Phone' && <Phone className="footer-contact-icon" size={16} />}
                   <span>{text}</span>
                 </a>
               ))}

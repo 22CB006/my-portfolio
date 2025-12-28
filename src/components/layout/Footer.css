@@ -139,9 +139,9 @@
   gap: 0.5rem;
 }
 
-.contact-icon {
-  width: 10px;
-  height: 10px;
+.footer-contact-icon {
+  width: 16px;
+  height: 16px;
   color: #06b6d4;
   flex-shrink: 0;
 }

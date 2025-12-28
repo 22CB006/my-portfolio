@@ -1,6 +1,7 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
+import { AnimatedProjectTitle } from "./animated-project-title";
 
 const Slide = ({ slide, index, current, handleSlideClick, onSlideClick }) => {
   const slideRef = useRef(null);
@@ -51,13 +52,13 @@ const Slide = ({ slide, index, current, handleSlideClick, onSlideClick }) => {
     }
   };
 
-  const { src, button, title, github, liveDemo } = slide;
+  const { src, button, title, github, liveDemo, caseStudy } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 cursor-pointer"
+        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[80vmin] h-[50vmin] mx-[4vmin] z-10 cursor-pointer"
         onClick={handleClick}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -71,7 +72,7 @@ const Slide = ({ slide, index, current, handleSlideClick, onSlideClick }) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-lg overflow-hidden transition-all duration-150 ease-out shadow-2xl"
           style={{
             transform:
               current === index
@@ -80,7 +81,7 @@ const Slide = ({ slide, index, current, handleSlideClick, onSlideClick }) => {
           }}
         >
           <img
-            className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
@@ -91,18 +92,18 @@ const Slide = ({ slide, index, current, handleSlideClick, onSlideClick }) => {
             decoding="sync"
           />
           {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent transition-all duration-1000" />
           )}
         </div>
         <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
+          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out z-20 ${
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
-          <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold relative mb-6">
-            {title}
+          <h2 className="text-lg md:text-2xl lg:text-4xl font-bold relative mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
+            <AnimatedProjectTitle title={title} isActive={current === index} />
           </h2>
-          {(github || liveDemo) && (
+          {(github || liveDemo || caseStudy) && (
             <div className="flex justify-center gap-4 flex-wrap">
               {github && (
                 <a
@@ -124,6 +125,17 @@ const Slide = ({ slide, index, current, handleSlideClick, onSlideClick }) => {
                   className="inline-flex items-center justify-center whitespace-nowrap font-mono text-sm -outline-offset-4 focus:outline-dotted focus:outline-1 focus:outline-cyan-400 text-black bg-[#c0c0c0] text-transparent [text-shadow:0_0_#000] shadow-[inset_-1px_-1px_#0a0a0a,inset_1px_1px_#fff,inset_-2px_-2px_grey,inset_2px_2px_#dfdfdf] active:shadow-[inset_-1px_-1px_#ffffff,inset_1px_1px_#0a0a0a,inset_-2px_-2px_#dfdfdf,inset_2px_2px_#808080] h-10 px-6 font-bold hover:bg-[#d4d4d4] transition-colors"
                 >
                   View Live Demo
+                </a>
+              )}
+              {caseStudy && (
+                <a
+                  href={caseStudy}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center justify-center whitespace-nowrap font-mono text-sm -outline-offset-4 focus:outline-dotted focus:outline-1 focus:outline-cyan-400 text-black bg-[#c0c0c0] text-transparent [text-shadow:0_0_#000] shadow-[inset_-1px_-1px_#0a0a0a,inset_1px_1px_#fff,inset_-2px_-2px_grey,inset_2px_2px_#dfdfdf] active:shadow-[inset_-1px_-1px_#ffffff,inset_1px_1px_#0a0a0a,inset_-2px_-2px_#dfdfdf,inset_2px_2px_#808080] h-10 px-6 font-bold hover:bg-[#d4d4d4] transition-colors"
+                >
+                  View Case Study
                 </a>
               )}
             </div>
@@ -171,7 +183,7 @@ export function Carousel({ slides, onSlideClick }) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[70vmin] mx-auto"
+      className="relative w-[80vmin] h-[50vmin] mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul

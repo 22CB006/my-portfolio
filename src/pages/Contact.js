@@ -5,8 +5,7 @@ import './Contact.css';
 
 function Contact() {
   const handleFormSubmit = (formData) => {
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
+    // Form submission is handled by CloudWatchForm component
   };
 
   return (

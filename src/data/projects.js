@@ -23,11 +23,12 @@ export const projects = [
     github: "https://github.com/22CB006/22CB006-LinkUpLive-Video_Conferencing_website.git",
     liveDemo: "http://22-cb-006-link-up-live-video-conferencing-website.vercel.app",
     images: [
-      "/projects/linkup-live-video-conferencing/thumbnail.jpg",
+      "/projects/linkup-live-video-conferencing/thumbnail.png",
       "/projects/linkup-live-video-conferencing/screenshot-1.jpg",
       "/projects/linkup-live-video-conferencing/screenshot-2.jpg",
       "/projects/linkup-live-video-conferencing/screenshot-3.jpg"
-    ]
+    ],
+    caseStudy: "/case-studies/linkup-live-video-conferencing"
   },
   {
     id: "quick-ai-content-generation",
@@ -50,39 +51,12 @@ export const projects = [
     github: "https://github.com/Vibhooshna/QuickAI",
     liveDemo: "https://quick-ai-sigma-six.vercel.app",
     images: [
-      "/projects/quick-ai-content-generation/thumbnail.jpg",
+      "/projects/quick-ai-content-generation/thumbnail.png",
       "/projects/quick-ai-content-generation/screenshot-1.jpg",
       "/projects/quick-ai-content-generation/screenshot-2.jpg",
       "/projects/quick-ai-content-generation/screenshot-3.jpg"
-    ]
-  },
-  {
-    id: "datalens-intelligent-dashboard",
-    title: "DataLens - Intelligent Data Dashboard",
-    year: 2025,
-    type: "fullstack",
-    shortDescription: "Full-stack data analytics dashboard with automated analysis, statistical insights, and interactive visualizations",
-    fullDescription: "Built a full-stack data analytics dashboard enabling automated dataset analysis, statistical insights, and interactive visualizations. Implemented JWT authentication, RESTful APIs, correlation/outlier/trend analysis, and responsive UI with drag-and-drop file upload for CSV/Excel/JSON files.",
-    problem: "Data analysts need a comprehensive tool to quickly analyze datasets and visualize insights without manual processing.",
-    solution: "Developed an intelligent dashboard with automated statistical analysis, interactive visualizations, and secure data handling.",
-    features: [
-      "Automated dataset analysis",
-      "Statistical insights (correlation, outliers, trends)",
-      "Interactive data visualizations",
-      "Drag-and-drop file upload (CSV/Excel/JSON)",
-      "JWT authentication",
-      "RESTful API architecture",
-      "Responsive UI with TailwindCSS"
     ],
-    techStack: ["FastAPI", "React.js", "Pandas", "NumPy", "Chart.js", "PostgreSQL", "SQLAlchemy", "TailwindCSS", "Docker", "GitHub Actions", "Vercel", "Render", "Pytest"],
-    github: "https://github.com/22CB006/DataLens---Intelligent-Data-Dashboard-Web-App",
-    liveDemo: null,
-    images: [
-      "/projects/datalens-intelligent-dashboard/thumbnail.jpg",
-      "/projects/datalens-intelligent-dashboard/screenshot-1.jpg",
-      "/projects/datalens-intelligent-dashboard/screenshot-2.jpg",
-      "/projects/datalens-intelligent-dashboard/screenshot-3.jpg"
-    ]
+    caseStudy: "/case-studies/quick-ai-content-generation"
   },
   {
     id: "travel-management-system",
@@ -105,11 +79,12 @@ export const projects = [
     github: "https://github.com/22CB006/Travel_Management_System_NextJS",
     liveDemo: "https://travel-management-system-next-js.vercel.app/",
     images: [
-      "/projects/travel-management-system/thumbnail.jpg",
+      "/projects/travel-management-system/thumbnail.png",
       "/projects/travel-management-system/screenshot-1.jpg",
       "/projects/travel-management-system/screenshot-2.jpg",
       "/projects/travel-management-system/screenshot-3.jpg"
-    ]
+    ],
+    caseStudy: "/case-studies/travel-management-system"
   },
   {
     id: "visual-lens-pro",
@@ -132,10 +107,11 @@ export const projects = [
     github: "https://github.com/22CB006/visual-lens-pro",
     liveDemo: "https://lovable.dev/projects/8a0a54a5-a4e9-46a1-9b83-d0ec182c7bbd",
     images: [
-      "/projects/visual-lens-pro/thumbnail.jpg",
+      "/projects/visual-lens-pro/thumbnail.png",
       "/projects/visual-lens-pro/screenshot-1.jpg",
       "/projects/visual-lens-pro/screenshot-2.jpg"
-    ]
+    ],
+    caseStudy: "/case-studies/visual-lens-pro"
   },
   {
     id: "workflow-roi-calculator",
@@ -158,9 +134,10 @@ export const projects = [
     github: "https://github.com/22CB006/ROI_Calculator",
     liveDemo: "https://roi-calculator-seven-rosy.vercel.app/",
     images: [
-      "/projects/workflow-roi-calculator/thumbnail.jpg",
+      "/projects/workflow-roi-calculator/thumbnail.png",
       "/projects/workflow-roi-calculator/screenshot-1.jpg",
       "/projects/workflow-roi-calculator/screenshot-2.jpg"
-    ]
+    ],
+    caseStudy: "/case-studies/workflow-roi-calculator"
   }
 ];

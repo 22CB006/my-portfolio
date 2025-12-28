@@ -104,35 +104,30 @@ export default function CloudWatchForm({ onSubmit }) {
     setIsSubmitting(true);
 
     try {
-      // Initialize EmailJS with your public key
-      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+      emailjs.init("AYKpMBGST291R0fmQ");
 
-      // Send email to you
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_5vb8xia",
+        "template_qodgjv8",
         {
           from_name: formData.name,
           from_email: formData.email,
-          message: formData.message,
-          to_email: "aryalakshmisece@gmail.com"
+          message: formData.message
         }
       );
 
-      // Send confirmation email to user
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_CONFIRMATION_TEMPLATE_ID", // Replace with your confirmation template ID
+        "service_5vb8xia",
+        "template_9045cqb",
         {
           to_name: formData.name,
           to_email: formData.email,
-          message: "Thank you for reaching out! I have received your message and will get back to you as soon as possible."
+          message: formData.message
         }
       );
 
       toast.success('Message sent successfully! Check your email for confirmation.');
       
-      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -143,8 +138,13 @@ export default function CloudWatchForm({ onSubmit }) {
         onSubmit(formData);
       }
     } catch (error) {
-      console.error('Email send error:', error);
-      toast.error('Failed to send message. Please try again or email me directly at aryalakshmisece@gmail.com');
+      let errorMessage = 'Failed to send message. ';
+      if (error.text) {
+        errorMessage += `Error: ${error.text}. `;
+      }
+      errorMessage += 'Please try again or email me directly at aryalakshmisece@gmail.com';
+      
+      toast.error(errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -153,19 +153,30 @@ export default function CloudWatchForm({ onSubmit }) {
   return (
     <div className="flex items-center justify-center p-4">
       <Toaster
-        position="top-center"
+        position="top-right"
         toastOptions={{
-          duration: 4000,
+          duration: 5000,
           style: {
             background: '#1a1a2e',
             color: '#06b6d4',
-            border: '1px solid rgba(6, 182, 212, 0.3)',
-            borderRadius: '8px',
+            border: '2px solid rgba(6, 182, 212, 0.5)',
+            borderRadius: '12px',
+            padding: '16px',
+            fontSize: '14px',
+            fontWeight: '500',
+            boxShadow: '0 10px 40px rgba(6, 182, 212, 0.3), 0 0 20px rgba(6, 182, 212, 0.2)',
+            zIndex: 9999,
+            minWidth: '300px',
           },
           success: {
             iconTheme: {
               primary: '#06b6d4',
               secondary: '#1a1a2e',
+            },
+            style: {
+              background: '#1a1a2e',
+              color: '#06b6d4',
+              border: '2px solid #06b6d4',
             },
           },
           error: {
@@ -173,7 +184,17 @@ export default function CloudWatchForm({ onSubmit }) {
               primary: '#ef4444',
               secondary: '#1a1a2e',
             },
+            style: {
+              background: '#1a1a2e',
+              color: '#ef4444',
+              border: '2px solid #ef4444',
+            },
           },
+        }}
+        containerStyle={{
+          top: 20,
+          right: 20,
+          zIndex: 9999,
         }}
       />
       <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 backdrop-blur-md rounded-xl shadow-xl p-8 flex flex-col items-center gap-6 w-full max-w-md border border-cyan-500/20">
