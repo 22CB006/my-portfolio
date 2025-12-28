@@ -4,6 +4,7 @@ import { projects } from '../data/projects';
 import ProjectCard from '../components/ui/ProjectCard';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
+import { Carousel } from '../components/ui/carousel';
 import './Projects.css';
 
 const Projects = () => {
@@ -21,6 +22,24 @@ const Projects = () => {
   const filteredProjects = selectedFilter === 'all' 
     ? projects 
     : projects.filter(project => project.type === selectedFilter);
+
+  // Transform projects data for carousel
+  const carouselSlides = filteredProjects.map(project => ({
+    title: project.title,
+    src: project.images[0] || "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=80",
+    github: project.github,
+    liveDemo: project.liveDemo,
+    projectId: project.id
+  }));
+
+  const handleProjectClick = (index) => {
+    const project = filteredProjects[index];
+    if (project.liveDemo) {
+      window.open(project.liveDemo, '_blank');
+    } else if (project.github) {
+      window.open(project.github, '_blank');
+    }
+  };
 
   return (
     <>
@@ -48,16 +67,10 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Projects grid */}
+          {/* Projects carousel */}
           {filteredProjects.length > 0 ? (
-            <div className="projects-page__grid">
-              {filteredProjects.map(project => (
-                <ProjectCard 
-                  key={project.id} 
-                  project={project} 
-                  showCaseStudyLink={true}
-                />
-              ))}
+            <div className="projects-page__carousel">
+              <Carousel slides={carouselSlides} onSlideClick={handleProjectClick} />
             </div>
           ) : (
             <div className="projects-page__empty">

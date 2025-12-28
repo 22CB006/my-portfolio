@@ -3,71 +3,37 @@
 
 export const experiences = [
   {
-    id: "fullstack-developer-techcorp",
-    company: "TechCorp Solutions",
-    role: "Full Stack Developer",
-    duration: "Jan 2023 - Present",
-    startDate: "2023-01-01",
+    id: "software-developer-intern-adya",
+    company: "Adya.ai",
+    role: "Software Developer Intern",
+    duration: "June 2025 - Present",
+    startDate: "2025-06-01",
     endDate: null,
-    description: "Leading development of enterprise web applications and microservices architecture for Fortune 500 clients.",
+    description: "Built AI-powered SaaS automation agents (Marketing, Voice-to-Voice, GTM) using FastAPI, Golang, and MCP, leading complete R&D, development, and testing while integrating Azure OpenAI, GCP, and third-party APIs (Apify, RapidAPI) for intelligent automation.",
     responsibilities: [
-      "Architected and developed scalable microservices using Node.js and React",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Mentored junior developers and conducted code reviews",
-      "Collaborated with cross-functional teams to deliver features on schedule",
-      "Optimized application performance resulting in 40% faster load times"
+      "Led complete R&D, development, and testing of AI-powered SaaS automation agents",
+      "Built Marketing, Voice-to-Voice, and GTM automation solutions using FastAPI and Golang",
+      "Integrated Azure OpenAI, GCP, and third-party APIs (Apify, RapidAPI) for intelligent automation",
+      "Collaborated with CTOs and PMs (INSEAD Alumni) in agile sprints",
+      "Aligned AI-driven solutions with business objectives and delivered impactful client demos"
     ],
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker", "AWS", "TypeScript"]
+    technologies: ["FastAPI", "Golang", "MCP", "Azure OpenAI", "GCP", "Apify", "RapidAPI", "AI/ML"]
   },
   {
-    id: "ai-engineer-innovate",
-    company: "Innovate AI Labs",
-    role: "AI/ML Engineer",
-    duration: "Jun 2022 - Dec 2022",
-    startDate: "2022-06-01",
-    endDate: "2022-12-31",
-    description: "Developed machine learning models and AI solutions for natural language processing and computer vision applications.",
+    id: "fullstack-developer-intern-unoiatech",
+    company: "Unoiatech",
+    role: "Full Stack Developer Intern",
+    duration: "Jan 2025 - June 2025",
+    startDate: "2025-01-01",
+    endDate: "2025-06-30",
+    description: "Began as a WordPress Developer and advanced to a Full Stack Developer, building scalable web solutions with RESTful APIs and delivering agile solutions aligned with business goals.",
     responsibilities: [
-      "Built and deployed NLP models for sentiment analysis with 92% accuracy",
-      "Developed computer vision systems for object detection and tracking",
-      "Optimized model training pipelines reducing training time by 50%",
-      "Created REST APIs for model inference and integration",
-      "Collaborated with data scientists on feature engineering and model selection"
+      "Advanced from WordPress Developer to Full Stack Developer role",
+      "Built scalable web solutions with RESTful APIs",
+      "Delivered agile solutions aligned with business goals",
+      "Developed and maintained full-stack web applications",
+      "Collaborated with cross-functional teams in agile environment"
     ],
-    technologies: ["Python", "TensorFlow", "PyTorch", "scikit-learn", "FastAPI", "Docker"]
-  },
-  {
-    id: "frontend-developer-webstudio",
-    company: "WebStudio Creative",
-    role: "Frontend Developer",
-    duration: "Jan 2021 - May 2022",
-    startDate: "2021-01-01",
-    endDate: "2022-05-31",
-    description: "Created responsive, user-friendly web interfaces for diverse clients across multiple industries.",
-    responsibilities: [
-      "Developed responsive websites using React and modern CSS frameworks",
-      "Implemented pixel-perfect designs from Figma mockups",
-      "Ensured cross-browser compatibility and accessibility standards",
-      "Integrated RESTful APIs and third-party services",
-      "Improved website performance and SEO rankings"
-    ],
-    technologies: ["React", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Git"]
-  },
-  {
-    id: "intern-software-dev",
-    company: "StartupHub Technologies",
-    role: "Software Development Intern",
-    duration: "Jun 2020 - Dec 2020",
-    startDate: "2020-06-01",
-    endDate: "2020-12-31",
-    description: "Contributed to full-stack development projects and gained hands-on experience with modern web technologies.",
-    responsibilities: [
-      "Assisted in developing features for web applications using React and Node.js",
-      "Fixed bugs and improved code quality through testing",
-      "Participated in agile development processes and daily standups",
-      "Learned best practices for version control and code collaboration",
-      "Documented code and created technical specifications"
-    ],
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Git", "REST APIs"]
+    technologies: ["WordPress", "JavaScript", "React", "Node.js", "RESTful APIs", "Agile"]
   }
 ];

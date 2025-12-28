@@ -3,134 +3,164 @@
 
 export const projects = [
   {
-    id: "ai-chatbot-assistant",
-    title: "AI Chatbot Assistant",
+    id: "linkup-live-video-conferencing",
+    title: "LinkUp Live - Video Conferencing Website",
     year: 2024,
-    type: "ai",
-    shortDescription: "Intelligent conversational AI assistant with natural language processing and context awareness",
-    fullDescription: "A sophisticated AI-powered chatbot that provides intelligent responses using advanced NLP techniques and maintains conversation context across multiple interactions.",
-    problem: "Users need quick, accurate answers to common questions without waiting for human support, but traditional chatbots lack context awareness and natural conversation flow.",
-    solution: "Built an AI assistant using transformer-based models with conversation history tracking, intent classification, and dynamic response generation to provide human-like interactions.",
-    features: [
-      "Natural language understanding with 95% accuracy",
-      "Context-aware responses across conversation sessions",
-      "Multi-turn dialogue management",
-      "Intent classification and entity extraction",
-      "Customizable personality and tone"
-    ],
-    techStack: ["Python", "TensorFlow", "BERT", "FastAPI", "React", "WebSocket"],
-    github: "https://github.com/aryalakshmi/ai-chatbot",
-    liveDemo: "https://ai-chatbot-demo.vercel.app",
-    images: []
-  },
-  {
-    id: "ecommerce-platform",
-    title: "E-Commerce Platform",
-    year: 2023,
     type: "fullstack",
-    shortDescription: "Full-featured online shopping platform with payment integration and inventory management",
-    fullDescription: "A complete e-commerce solution with user authentication, product catalog, shopping cart, payment processing, and admin dashboard for inventory and order management.",
-    problem: "Small businesses need an affordable, easy-to-manage online store without the complexity and cost of enterprise solutions.",
-    solution: "Developed a scalable e-commerce platform with intuitive admin interface, secure payment processing, and responsive design that works across all devices.",
+    shortDescription: "Real-time video conferencing platform with 30% reduced bandwidth usage and secure multi-factor authentication",
+    fullDescription: "Built a video conferencing platform using Next.js and TypeScript, enabling real-time communication with 30% reduced bandwidth usage. Integrated Clerk for multi-factor authentication and getStream for messaging, focusing on secure access, performance optimization, and seamless UI with Tailwind CSS and Shadcn.",
+    problem: "Need for a secure, high-performance video conferencing solution with reduced bandwidth consumption for better accessibility.",
+    solution: "Developed a full-stack video conferencing platform with optimized streaming, secure authentication, and real-time messaging capabilities.",
     features: [
-      "User authentication and profile management",
-      "Product catalog with search and filtering",
-      "Shopping cart and wishlist functionality",
-      "Stripe payment integration",
-      "Admin dashboard for inventory and orders",
-      "Order tracking and email notifications"
+      "Real-time video conferencing with optimized bandwidth",
+      "Multi-factor authentication via Clerk",
+      "Real-time messaging with getStream",
+      "Secure access control",
+      "Performance-optimized streaming",
+      "Responsive UI with Tailwind CSS and Shadcn"
     ],
-    techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe API", "JWT", "Tailwind CSS"],
-    github: "https://github.com/aryalakshmi/ecommerce-platform",
-    liveDemo: "https://ecommerce-demo.netlify.app",
-    images: []
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn", "Clerk", "getStream", "Vercel"],
+    github: "https://github.com/22CB006/22CB006-LinkUpLive-Video_Conferencing_website.git",
+    liveDemo: "http://22-cb-006-link-up-live-video-conferencing-website.vercel.app",
+    images: [
+      "/projects/linkup-live-video-conferencing/thumbnail.jpg",
+      "/projects/linkup-live-video-conferencing/screenshot-1.jpg",
+      "/projects/linkup-live-video-conferencing/screenshot-2.jpg",
+      "/projects/linkup-live-video-conferencing/screenshot-3.jpg"
+    ]
   },
   {
-    id: "task-management-app",
-    title: "Task Management Application",
-    year: 2023,
-    type: "web",
-    shortDescription: "Collaborative task tracking tool with real-time updates and team collaboration features",
-    fullDescription: "A modern task management application that enables teams to organize projects, assign tasks, track progress, and collaborate in real-time.",
-    problem: "Teams struggle to coordinate tasks across multiple projects and lack visibility into project progress and team workload.",
-    solution: "Created a real-time collaborative platform with drag-and-drop task boards, automated notifications, and comprehensive project analytics.",
-    features: [
-      "Kanban-style task boards with drag-and-drop",
-      "Real-time collaboration with WebSocket",
-      "Task assignment and priority management",
-      "Project timelines and progress tracking",
-      "Team activity feed and notifications",
-      "File attachments and comments"
-    ],
-    techStack: ["React", "TypeScript", "Node.js", "Socket.io", "PostgreSQL", "Redux"],
-    github: "https://github.com/aryalakshmi/task-manager",
-    liveDemo: null,
-    images: []
-  },
-  {
-    id: "weather-forecast-app",
-    title: "Weather Forecast Application",
-    year: 2024,
-    type: "web",
-    shortDescription: "Real-time weather information with 7-day forecasts and location-based alerts",
-    fullDescription: "A responsive weather application that provides current conditions, hourly and weekly forecasts, and severe weather alerts based on user location.",
-    problem: "Users need quick access to accurate weather information with visual representations that are easy to understand at a glance.",
-    solution: "Built a clean, intuitive weather app with real-time data from multiple APIs, interactive charts, and location-based personalization.",
-    features: [
-      "Current weather conditions with detailed metrics",
-      "7-day forecast with hourly breakdowns",
-      "Location search and geolocation support",
-      "Weather alerts and notifications",
-      "Interactive temperature and precipitation charts",
-      "Favorite locations management"
-    ],
-    techStack: ["React", "OpenWeather API", "Chart.js", "Geolocation API", "CSS3"],
-    github: "https://github.com/aryalakshmi/weather-app",
-    liveDemo: "https://weather-forecast-app.vercel.app",
-    images: []
-  },
-  {
-    id: "ml-image-classifier",
-    title: "Image Classification System",
-    year: 2023,
+    id: "quick-ai-content-generation",
+    title: "Quick AI - Content Generation Platform",
+    year: 2025,
     type: "ai",
-    shortDescription: "Deep learning model for automated image classification with 98% accuracy",
-    fullDescription: "A convolutional neural network-based system that automatically classifies images into predefined categories with high accuracy and real-time processing capabilities.",
-    problem: "Manual image categorization is time-consuming and error-prone, especially when dealing with large datasets requiring consistent classification.",
-    solution: "Trained a custom CNN model on a large dataset with data augmentation and transfer learning to achieve high accuracy while maintaining fast inference times.",
+    shortDescription: "AI-powered creative assistant for generating articles, titles, and images with subscription-based access",
+    fullDescription: "Built an AI-powered creative assistant using PERN Stack, integrated with OpenAI and ClipDrop APIs for generating articles, titles, and images. Deployed on Vercel, featuring dynamic content generation, image editing, and subscription-based access.",
+    problem: "Content creators need efficient tools to generate high-quality articles, titles, and images quickly.",
+    solution: "Created an AI-powered platform that leverages OpenAI and ClipDrop APIs to automate content creation with subscription-based access control.",
     features: [
-      "Multi-class image classification",
-      "Real-time prediction with confidence scores",
-      "Batch processing for large datasets",
-      "Model retraining interface",
-      "Visualization of model predictions",
-      "REST API for integration"
+      "AI-powered article generation",
+      "Dynamic title suggestions",
+      "Image generation and editing",
+      "Subscription-based access",
+      "Real-time content preview",
+      "User authentication and management"
     ],
-    techStack: ["Python", "PyTorch", "OpenCV", "Flask", "NumPy", "Docker"],
-    github: "https://github.com/aryalakshmi/image-classifier",
-    liveDemo: null,
-    images: []
+    techStack: ["React.js", "Node.js", "Express.js", "PostgreSQL (Neon DB)", "OpenAI API", "ClipDrop API", "Vercel"],
+    github: "https://github.com/Vibhooshna/QuickAI",
+    liveDemo: "https://quick-ai-sigma-six.vercel.app",
+    images: [
+      "/projects/quick-ai-content-generation/thumbnail.jpg",
+      "/projects/quick-ai-content-generation/screenshot-1.jpg",
+      "/projects/quick-ai-content-generation/screenshot-2.jpg",
+      "/projects/quick-ai-content-generation/screenshot-3.jpg"
+    ]
   },
   {
-    id: "portfolio-website",
-    title: "Portfolio Website",
-    year: 2024,
-    type: "web",
-    shortDescription: "Modern, responsive portfolio showcasing projects and professional experience",
-    fullDescription: "A professional portfolio website built with React, featuring dynamic content loading, SEO optimization, and a clean, modern design.",
-    problem: "Need a professional online presence to showcase projects, skills, and experience to potential employers and clients.",
-    solution: "Developed a data-driven portfolio with centralized content management, responsive design, and optimized performance for all devices.",
+    id: "datalens-intelligent-dashboard",
+    title: "DataLens - Intelligent Data Dashboard",
+    year: 2025,
+    type: "fullstack",
+    shortDescription: "Full-stack data analytics dashboard with automated analysis, statistical insights, and interactive visualizations",
+    fullDescription: "Built a full-stack data analytics dashboard enabling automated dataset analysis, statistical insights, and interactive visualizations. Implemented JWT authentication, RESTful APIs, correlation/outlier/trend analysis, and responsive UI with drag-and-drop file upload for CSV/Excel/JSON files.",
+    problem: "Data analysts need a comprehensive tool to quickly analyze datasets and visualize insights without manual processing.",
+    solution: "Developed an intelligent dashboard with automated statistical analysis, interactive visualizations, and secure data handling.",
     features: [
-      "Dynamic project showcase with filtering",
-      "Detailed case study pages",
-      "Experience timeline",
-      "Contact form with validation",
-      "SEO optimization with meta tags",
-      "Fully responsive design"
+      "Automated dataset analysis",
+      "Statistical insights (correlation, outliers, trends)",
+      "Interactive data visualizations",
+      "Drag-and-drop file upload (CSV/Excel/JSON)",
+      "JWT authentication",
+      "RESTful API architecture",
+      "Responsive UI with TailwindCSS"
     ],
-    techStack: ["React", "React Router", "Tailwind CSS", "Vite"],
-    github: "https://github.com/aryalakshmi/portfolio",
+    techStack: ["FastAPI", "React.js", "Pandas", "NumPy", "Chart.js", "PostgreSQL", "SQLAlchemy", "TailwindCSS", "Docker", "GitHub Actions", "Vercel", "Render", "Pytest"],
+    github: "https://github.com/22CB006/DataLens---Intelligent-Data-Dashboard-Web-App",
     liveDemo: null,
-    images: []
+    images: [
+      "/projects/datalens-intelligent-dashboard/thumbnail.jpg",
+      "/projects/datalens-intelligent-dashboard/screenshot-1.jpg",
+      "/projects/datalens-intelligent-dashboard/screenshot-2.jpg",
+      "/projects/datalens-intelligent-dashboard/screenshot-3.jpg"
+    ]
+  },
+  {
+    id: "travel-management-system",
+    title: "Travel Management System",
+    year: 2025,
+    type: "fullstack",
+    shortDescription: "Modern travel management system built with Next.js 16 and React 19 with TypeScript",
+    fullDescription: "A comprehensive travel management system built with the latest Next.js 16.0.10 and React 19.2.1, featuring TypeScript for type safety, Tailwind CSS 4 for styling, and optimized with Turbopack build tool.",
+    problem: "Travel agencies need a modern, efficient system to manage bookings, itineraries, and customer information.",
+    solution: "Built a full-featured travel management platform using cutting-edge technologies for optimal performance and developer experience.",
+    features: [
+      "Modern UI with Geist Sans & Geist Mono fonts",
+      "Type-safe development with TypeScript",
+      "Fast build times with Turbopack",
+      "Responsive design with Tailwind CSS 4",
+      "Code quality enforcement with ESLint 9",
+      "Optimized performance with Next.js 16"
+    ],
+    techStack: ["Next.js 16.0.10", "React 19.2.1", "TypeScript 5", "Tailwind CSS 4", "Turbopack", "ESLint 9"],
+    github: "https://github.com/22CB006/Travel_Management_System_NextJS",
+    liveDemo: "https://travel-management-system-next-js.vercel.app/",
+    images: [
+      "/projects/travel-management-system/thumbnail.jpg",
+      "/projects/travel-management-system/screenshot-1.jpg",
+      "/projects/travel-management-system/screenshot-2.jpg",
+      "/projects/travel-management-system/screenshot-3.jpg"
+    ]
+  },
+  {
+    id: "visual-lens-pro",
+    title: "Visual Lens Pro",
+    year: 2025,
+    type: "web",
+    shortDescription: "Professional visual content management platform built with Lovable",
+    fullDescription: "A professional visual content management platform developed using Lovable, focusing on intuitive design and powerful content organization capabilities.",
+    problem: "Content creators need an efficient way to manage and organize visual content with professional-grade tools.",
+    solution: "Created a streamlined visual content platform with modern UI/UX and powerful management features.",
+    features: [
+      "Visual content organization",
+      "Intuitive user interface",
+      "Professional-grade tools",
+      "Fast content management",
+      "Responsive design",
+      "Modern architecture"
+    ],
+    techStack: ["Lovable", "React", "TypeScript"],
+    github: "https://github.com/22CB006/visual-lens-pro",
+    liveDemo: "https://lovable.dev/projects/8a0a54a5-a4e9-46a1-9b83-d0ec182c7bbd",
+    images: [
+      "/projects/visual-lens-pro/thumbnail.jpg",
+      "/projects/visual-lens-pro/screenshot-1.jpg",
+      "/projects/visual-lens-pro/screenshot-2.jpg"
+    ]
+  },
+  {
+    id: "workflow-roi-calculator",
+    title: "Workflow ROI Calculator",
+    year: 2025,
+    type: "web",
+    shortDescription: "Interactive ROI calculator for workflow automation with automated email report delivery",
+    fullDescription: "A Next.js application that calculates Return on Investment (ROI) for workflow automation, featuring email report delivery. Includes interactive calculations based on workforce metrics, automated email reports, and a modern, mobile-friendly interface.",
+    problem: "Businesses need to quantify the ROI of workflow automation to make informed investment decisions.",
+    solution: "Built an interactive calculator that computes ROI based on workforce metrics and delivers detailed reports via email.",
+    features: [
+      "Interactive ROI calculation based on workforce metrics",
+      "Automated email report delivery",
+      "Modern, responsive design with Tailwind CSS",
+      "Mobile-friendly interface",
+      "Real-time calculations",
+      "Professional report generation"
+    ],
+    techStack: ["Next.js 15.4.1", "TypeScript", "Tailwind CSS 4", "Nodemailer", "Lucide React"],
+    github: "https://github.com/22CB006/ROI_Calculator",
+    liveDemo: "https://roi-calculator-seven-rosy.vercel.app/",
+    images: [
+      "/projects/workflow-roi-calculator/thumbnail.jpg",
+      "/projects/workflow-roi-calculator/screenshot-1.jpg",
+      "/projects/workflow-roi-calculator/screenshot-2.jpg"
+    ]
   }
 ];

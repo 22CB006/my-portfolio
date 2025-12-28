@@ -1,0 +1,192 @@
+/* Retro Button Base */
+.retro-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background: #010101;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: fit-content;
+  white-space: nowrap;
+}
+
+.retro-button-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  border-radius: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Primary Variant - Cyan */
+.retro-button-primary {
+  --bg-color: #06b6d4;
+  --bg-color-active: #0891b2;
+  --shadow-light: #67e8f9;
+  --shadow-dark: #0e7490;
+}
+
+.retro-button-primary .retro-button-inner {
+  color: #ffffff;
+  background: var(--bg-color);
+  box-shadow: 
+    inset 1px 1px 1px var(--shadow-light),
+    inset -1px -1px 1px var(--shadow-dark),
+    2px 2px 4px #000;
+}
+
+.retro-button-primary:hover .retro-button-inner {
+  background: #22d3ee;
+}
+
+.retro-button-primary:active .retro-button-inner {
+  transform: scale(0.98);
+  background: var(--bg-color-active);
+  box-shadow: 
+    inset 0 0 4px #000,
+    inset 1px 1px 1px transparent,
+    inset -1px -1px 1px transparent,
+    2px 2px 4px transparent;
+}
+
+/* Secondary Variant - Purple */
+.retro-button-secondary {
+  --bg-color: #8b5cf6;
+  --bg-color-active: #7c3aed;
+  --shadow-light: #a78bfa;
+  --shadow-dark: #6d28d9;
+}
+
+.retro-button-secondary .retro-button-inner {
+  color: #ffffff;
+  background: var(--bg-color);
+  box-shadow: 
+    inset 1px 1px 1px var(--shadow-light),
+    inset -1px -1px 1px var(--shadow-dark),
+    2px 2px 4px #000;
+}
+
+.retro-button-secondary:hover .retro-button-inner {
+  background: #a78bfa;
+}
+
+.retro-button-secondary:active .retro-button-inner {
+  transform: scale(0.98);
+  background: var(--bg-color-active);
+  box-shadow: 
+    inset 0 0 4px #000,
+    inset 1px 1px 1px transparent,
+    inset -1px -1px 1px transparent,
+    2px 2px 4px transparent;
+}
+
+/* Gradient Variant - Cyan to Purple */
+.retro-button-gradient {
+  --shadow-light: #67e8f9;
+  --shadow-dark: #6d28d9;
+}
+
+.retro-button-gradient .retro-button-inner {
+  color: #ffffff;
+  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+  box-shadow: 
+    inset 1px 1px 1px var(--shadow-light),
+    inset -1px -1px 1px var(--shadow-dark),
+    2px 2px 4px #000;
+}
+
+.retro-button-gradient:hover .retro-button-inner {
+  background: linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
+}
+
+.retro-button-gradient:active .retro-button-inner {
+  transform: scale(0.98);
+  background: linear-gradient(135deg, #0891b2 0%, #7c3aed 100%);
+  box-shadow: 
+    inset 0 0 4px #000,
+    inset 1px 1px 1px transparent,
+    inset -1px -1px 1px transparent,
+    2px 2px 4px transparent;
+}
+
+/* Outline Variant */
+.retro-button-outline {
+  --bg-color: rgba(6, 182, 212, 0.1);
+  --bg-color-active: rgba(6, 182, 212, 0.2);
+  --shadow-light: #67e8f9;
+  --shadow-dark: #0e7490;
+}
+
+.retro-button-outline .retro-button-inner {
+  color: #06b6d4;
+  background: var(--bg-color);
+  border: 1px solid #06b6d4;
+  box-shadow: 
+    inset 1px 1px 1px var(--shadow-light),
+    inset -1px -1px 1px var(--shadow-dark),
+    2px 2px 4px #000;
+}
+
+.retro-button-outline:hover .retro-button-inner {
+  background: rgba(6, 182, 212, 0.15);
+  color: #22d3ee;
+  border-color: #22d3ee;
+}
+
+.retro-button-outline:active .retro-button-inner {
+  transform: scale(0.98);
+  background: var(--bg-color-active);
+  box-shadow: 
+    inset 0 0 4px #000,
+    inset 1px 1px 1px transparent,
+    inset -1px -1px 1px transparent,
+    2px 2px 4px transparent;
+}
+
+/* Size Variants */
+.retro-button-small .retro-button-inner {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.retro-button-medium .retro-button-inner {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+}
+
+.retro-button-large .retro-button-inner {
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+}
+
+/* Disabled State */
+.retro-button:disabled,
+.retro-button:disabled:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.retro-button:disabled .retro-button-inner {
+  background: #4b5563;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .retro-button-large .retro-button-inner {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}

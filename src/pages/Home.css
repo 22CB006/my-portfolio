@@ -3,6 +3,22 @@
 }
 
 /* Ensure sections have proper spacing */
-.home > section {
+.home > section,
+.home > div {
   width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* Remove margin from last section */
+.home > section:last-child,
+.home > div:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .home > section,
+  .home > div {
+    margin-bottom: 2rem;
+  }
 }

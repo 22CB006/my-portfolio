@@ -1,0 +1,101 @@
+.skills-orbital-wrapper {
+  background: #0a0a0f;
+  position: relative;
+  overflow: visible;
+  min-height: auto;
+  padding: 4rem 2rem 2rem;
+}
+
+.skills-orbital-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  z-index: 50;
+}
+
+.skills-orbital-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.skills-orbital-badge-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #06b6d4;
+}
+
+.skills-orbital-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #06b6d4;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.skills-orbital-subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.skills-orbital-dual-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0 1rem;
+}
+
+.skills-orbital-section {
+  position: relative;
+  overflow: visible;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.skills-orbital-section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #06b6d4;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .skills-orbital-dual-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-orbital-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .skills-orbital-header {
+    margin-bottom: 3rem;
+  }
+
+  .skills-orbital-title {
+    font-size: 1.75rem;
+  }
+
+  .skills-orbital-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .skills-orbital-section-title {
+    font-size: 1.25rem;
+  }
+}

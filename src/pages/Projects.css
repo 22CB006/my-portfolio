@@ -10,6 +10,15 @@
   justify-content: center;
 }
 
+.projects-page__carousel {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .projects-page__grid {
   display: grid;
   grid-template-columns: 1fr;
