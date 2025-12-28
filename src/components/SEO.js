@@ -13,7 +13,7 @@ const SEO = ({
 }) => {
   // Construct full title
   const fullTitle = title 
-    ? `${title} | ${siteConfig.name}` 
+    ? `${siteConfig.name} | ${title}` 
     : `${siteConfig.name} - ${siteConfig.title}`;
 
   // Use provided description or default from config
