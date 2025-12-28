@@ -74,7 +74,8 @@ export default function RadialOrbitalTimeline({ timelineData }) {
 
   const calculateNodePosition = (index, total) => {
     const angle = ((index / total) * 360 + rotationAngle) % 360;
-    const radius = 200;
+    // Responsive radius based on screen size
+    const radius = window.innerWidth < 768 ? 120 : window.innerWidth < 1024 ? 160 : 200;
     const radian = (angle * Math.PI) / 180;
     const x = radius * Math.cos(radian) + centerOffset.x;
     const y = radius * Math.sin(radian) + centerOffset.y;
@@ -136,7 +137,10 @@ export default function RadialOrbitalTimeline({ timelineData }) {
           </div>
 
           {/* Orbit ring */}
-          <div className="absolute w-96 h-96 rounded-full border border-cyan-500/20"></div>
+          <div className="absolute rounded-full border border-cyan-500/20" style={{
+            width: window.innerWidth < 768 ? '240px' : window.innerWidth < 1024 ? '320px' : '384px',
+            height: window.innerWidth < 768 ? '240px' : window.innerWidth < 1024 ? '320px' : '384px'
+          }}></div>
 
           {/* Timeline nodes */}
           {timelineData.map((item, index) => {
@@ -214,8 +218,10 @@ export default function RadialOrbitalTimeline({ timelineData }) {
 
                 {/* Expanded card */}
                 {isExpanded && (
-                  <Card className="absolute top-20 left-1/2 -translate-x-1/2 w-64 overflow-visible z-[300]" style={{
+                  <Card className="absolute top-20 left-1/2 -translate-x-1/2 w-64 sm:w-72 md:w-80 overflow-visible z-[300]" style={{
                     maxWidth: 'calc(100vw - 2rem)',
+                    left: window.innerWidth < 640 ? '50%' : undefined,
+                    transform: window.innerWidth < 640 ? 'translateX(-50%)' : undefined,
                   }}>
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-px h-3 bg-cyan-500/50"></div>
                     <CardHeader className="pb-2">

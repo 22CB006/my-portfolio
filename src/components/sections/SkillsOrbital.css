@@ -95,6 +95,11 @@
     font-size: 0.875rem;
   }
 
+  .skills-orbital-section {
+    min-height: 80vh;
+    padding: 1rem 0;
+  }
+
   .skills-orbital-section-title {
     font-size: 1.25rem;
   }

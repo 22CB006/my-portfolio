@@ -334,6 +334,60 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 640px) {
+  .about-profile {
+    padding: 3rem 1rem;
+  }
+
+  .about-profile .animated-title {
+    font-size: 1.75rem;
+  }
+
+  .about-profile .section__subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .about-profile__content {
+    min-height: 250px;
+  }
+
+  .about-profile__magic-text,
+  .about-profile__magic-text span,
+  .about-profile__text {
+    font-size: 0.9375rem;
+  }
+
+  .about-strengths,
+  .about-value,
+  .about-skills {
+    padding: 3rem 1rem;
+  }
+
+  .value-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .value-card__title {
+    font-size: 1.25rem;
+  }
+
+  .value-card__description {
+    font-size: 0.9375rem;
+  }
+
+  .about-skills__group {
+    padding: 1.25rem;
+  }
+
+  .about-skills__category {
+    font-size: 1.125rem;
+  }
+
+  .about-skills__tags {
+    gap: 0.5rem;
+  }
+}
+
 @media (max-width: 767px) {
   .about-profile {
     padding: 4rem 1.5rem;

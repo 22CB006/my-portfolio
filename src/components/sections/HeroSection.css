@@ -569,7 +569,7 @@
 @media (max-width: 768px) {
   .hero-section {
     min-height: auto;
-    padding: 0 1.5rem 3rem;
+    padding: 6rem 1.5rem 3rem;
   }
 
   .hero-section__split {

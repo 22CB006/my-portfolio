@@ -32,6 +32,24 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 640px) {
+  .experience-page {
+    padding: 3rem 1rem;
+  }
+
+  .experience-page__title {
+    font-size: 2rem;
+  }
+
+  .experience-page__subtitle {
+    font-size: 1rem;
+  }
+
+  .experience-page__header {
+    margin-bottom: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .experience-page {
     padding: 5rem 2rem;

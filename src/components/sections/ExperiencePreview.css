@@ -152,6 +152,39 @@
   transform: translateX(4px);
 }
 
+@media (max-width: 640px) {
+  .experience-role {
+    font-size: 1.125rem;
+  }
+
+  .experience-company {
+    font-size: 0.9375rem;
+  }
+
+  .experience-description {
+    font-size: 0.8125rem;
+  }
+
+  .responsibilities-list li {
+    font-size: 0.8125rem;
+    padding-left: 1.25rem;
+  }
+
+  .tech-badge {
+    font-size: 0.6875rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .experience-view-all-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .experience-preview-cta {
+    padding: 3rem 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .experience-role {
     font-size: 1.25rem;

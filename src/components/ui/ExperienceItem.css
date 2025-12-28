@@ -104,6 +104,51 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 640px) {
+  .experience-item {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .experience-item::before {
+    left: 0.375rem;
+  }
+
+  .experience-item__timeline-marker {
+    width: 1rem;
+    height: 1rem;
+    border-width: 2px;
+  }
+
+  .experience-item__content {
+    padding: 1rem;
+  }
+
+  .experience-item__role {
+    font-size: 1.125rem;
+  }
+
+  .experience-item__company {
+    font-size: 0.9375rem;
+  }
+
+  .experience-item__duration {
+    font-size: 0.8125rem;
+  }
+
+  .experience-item__description {
+    font-size: 0.875rem;
+  }
+
+  .experience-item__responsibilities li {
+    font-size: 0.875rem;
+  }
+
+  .experience-item__technologies {
+    gap: 0.375rem;
+  }
+}
+
 @media (min-width: 768px) {
   .experience-item {
     padding-left: 3rem;

@@ -37,6 +37,27 @@
   margin-bottom: 1.5rem;
 }
 
+/* Mobile */
+@media (max-width: 640px) {
+  .projects-page__filters {
+    gap: 0.5rem;
+  }
+
+  .projects-page__carousel {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 70vh;
+  }
+
+  .projects-page__grid {
+    gap: 1.5rem;
+  }
+
+  .projects-page__empty p {
+    font-size: 1rem;
+  }
+}
+
 /* Tablet and up */
 @media (min-width: 768px) {
   .projects-page__grid {
